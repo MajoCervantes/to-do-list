@@ -19,6 +19,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 520px;
+	max-width: 100vw;
 	background: #161a2b;
 	text-align: center;
 	margin: 60px auto;
