@@ -11,9 +11,9 @@ const ToDoForm = ({ onSubmit, edit, todos }) => {
 
 	const inputRef = useRef(null)
 
-	useEffect(() => {
-		inputRef.current.focus()
-	})
+	// useEffect(() => {
+	// 	inputRef.current.focus()
+	// })
 
 	//Funciones
 	const handleChange = (e) => {
