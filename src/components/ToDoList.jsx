@@ -67,13 +67,12 @@ const ToDoList = () => {
 	}, [deletedTodos])
 
 	const addTodo = (todo) => {
-		if (!todo.text || /^\s*$/.test(todo.text)) {
-			alert("No has ingresado texto")
-			return
-		} else if (
-			todos.map((t) => t.text === todo.text)
+		if (
+			!todo.text ||
+			todos.map((t) => t.text === todo.text) ||
+			/^\s*$/.test(todo.text)
 		) {
-			alert("Esta tarea ya ha sido ingresada")
+			alert("No has ingresado texto")
 			return
 		}
 
