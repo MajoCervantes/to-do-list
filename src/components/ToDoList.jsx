@@ -67,12 +67,7 @@ const ToDoList = () => {
 	}, [deletedTodos])
 
 	const addTodo = (todo) => {
-		if (
-			!todo.text ||
-			todos.map((t) => t.text === todo.text) ||
-			/^\s*$/.test(todo.text)
-		) {
-			alert("No has ingresado texto")
+		if (!todo.text || /^\s*$/.test(todo.text)) {
 			return
 		}
 
