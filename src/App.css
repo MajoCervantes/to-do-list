@@ -93,6 +93,15 @@ h1 {
 	text-transform: capitalize;
 }
 
+.todo-button:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(155, 0, 250, 1) 0%,
+		rgba(93, 12, 255, 1) 100%
+	);
+	color: hotpink;
+}
+
 .todo-input.edit {
 	border: 2px solid #149fff;
 }
