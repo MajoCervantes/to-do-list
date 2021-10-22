@@ -172,8 +172,16 @@ h1 {
 	color: #fff;
 }
 
+.delete-icon:hover {
+	color: hotpink;
+}
+
 .edit-icon {
 	color: #fff;
+}
+
+.edit-icon:hover {
+	color: hotpink;
 }
 
 .todos-buttons {
@@ -191,6 +199,15 @@ h1 {
 	);
 	color: #fff;
 	text-transform: capitalize;
+}
+
+.todos-buttons:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(155, 0, 250, 1) 0%,
+		rgba(93, 12, 255, 1) 100%
+	);
+	color: hotpink;
 }
 
 .global-buttons-container {
