@@ -68,6 +68,15 @@ const ToDoList = () => {
 
 	const addTodo = (todo) => {
 		if (!todo.text || /^\s*$/.test(todo.text)) {
+			alert("No has ingresado un texto válido")
+			return
+		}
+
+		const equalTodo = todos.some(
+			(t) => t.text === todo.text
+		)
+		if (equalTodo === true) {
+			alert("Esta tarea ya ha sido ingresada")
 			return
 		}
 
